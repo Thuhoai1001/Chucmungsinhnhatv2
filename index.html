@@ -22,7 +22,7 @@
           line-height: 1.4;
         }
         .heading p {
-          font-size: 1.1 rem;
+          font-size: 1.1rem;
         }
       }
 
@@ -59,7 +59,7 @@
 
             <!-- cột bên phải -->
             <div id="bond" class="col-xs-12 col-sm-8 text-center">
-                <img data-toggle="modal" data-target="#myModal"
+                <img id="open-card" data-toggle="modal" data-target="#myModal"
                      class="media-object img-responsive img-thumbnail bg-snow-tranparent-hidden center-block"
                      src="img/Winter happy birthday.jpg" alt="80x80px"
                      style="max-width:100%; height:auto;">
@@ -134,9 +134,9 @@
     <script src="js/js01.js"></script>
 
     <script>
-      // Play nhạc khi mở modal
-      $('#myModal').on('shown.bs.modal', function () {
-        var audio = document.getElementById('bg-music');
+      // Phát nhạc ngay khi click ảnh mở thiệp
+      document.getElementById("open-card").addEventListener("click", function () {
+        var audio = document.getElementById("bg-music");
         audio.currentTime = 0;
         audio.muted = false;
         audio.play().catch(function(err){
