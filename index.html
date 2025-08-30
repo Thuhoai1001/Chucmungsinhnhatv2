@@ -2,184 +2,175 @@
 <html lang="en">
 
 <head>
-    <title>HPBD HHNT</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/css01.css">
+  <title>HPBD HHNT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/css01.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
-    <!-- Responsive font-size cho mobile -->
-    <style>
-      @media (max-width: 768px) {
-        .modal-body h1,
-        .modal-body p,
-        .modal-title {
-          font-size: 1.2rem;
-          line-height: 1.4;
-        }
-        .heading p {
-          font-size: 1.1rem;
-        }
+  <!-- Responsive font-size cho mobile -->
+  <style>
+    @media (max-width: 768px) {
+      .modal-body h1,
+      .modal-body p,
+      .modal-title,
+      .heading p {
+        font-size: 1.1rem;
+        line-height: 1.4;
       }
+    }
 
-      @media (max-width: 480px) {
-        .modal-body h1,
-        .modal-body p,
-        .modal-title {
-          font-size: 1rem;
-        }
-        .heading p {
-          font-size: 0.9rem;
-        }
+    @media (max-width: 480px) {
+      .modal-body h1,
+      .modal-body p,
+      .modal-title,
+      .heading p {
+        font-size: 0.9rem;
       }
-    </style>
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="jumbotron img_banner_hpbd">
-            <div class="text-center text-danger bg-danger">
-                <h1>TO: Nguyễn Thu Hồng</h1>
-            </div>
-        </div>
+  <div class="container-fluid">
+    <div class="jumbotron img_banner_hpbd">
+      <div class="text-center text-danger bg-danger">
+        <h1>TO: Nguyễn Thu Hồng</h1>
+      </div>
     </div>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <!-- cột bên trái -->
+      <div class="col-xs-12 col-sm-4">
+        <p style="padding-top: 5px"></p>
+      </div>
+
+      <!-- cột bên phải -->
+      <div id="bond" class="col-xs-12 col-sm-8 text-center">
+        <img id="open-card" data-toggle="modal" data-target="#myModal"
+          class="media-object img-responsive img-thumbnail bg-snow-tranparent-hidden center-block"
+          src="img/Winter happy birthday.jpg" alt="80x80px" style="max-width:100%; height:auto;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title text-info" id="myModalLabel">Thiệp sinh nhật</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="containeri">
+            <img class="img img-responsive center-block" src="img/Winter happy birthday.jpg" alt="80x80px"
+              style="max-width:100%; height:auto;">
+            <!-- Nhạc (ẩn controls, preload, playsinline để mobile chạy được) -->
+            <audio id="bg-music" preload="auto" playsinline>
+              <source src="ms/hpbd.mp3" type="audio/mpeg" />
+              Trình duyệt của bạn không hỗ trợ phát nhạc.
+            </audio>
+          </div>
+
+          <h1 class="heading text-danger bg-danger">
+            <div class="containeri">
+              <img class="img img-responsive center-block"
+                src="img/Snowmen-and-Sledding-Thank-You-Note.jpg.png" style="max-width:100%; height:auto;">
+              <p class="top-right">Nguyễn Thu Hồng</p>
+              <p class="bottom-right">Thank you for coming</p>
+              <p class="top-left">Thanks for staying</p>
+              <p class="and">and make me happy.</p>
+              <p class="center">Happy birthday to you!</p>
+              <p class="bottom-left">Hoàng Nguyễn</p>
+            </div>
+          </h1>
+
+          <div class="containeri">
+            <img class="img img-responsive center-block" src="img/Hong.jpg" style="max-width:100%; height:auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid footer navbar-fixed-bottom">
     <div class="container">
-        <div class="row">
-            <!-- cột bên trái -->
-            <div class="col-xs-12 col-sm-4">
-                <p style="padding-top: 5px"></p>
-                <span class="text-capitalize text-right bottom-align-text"></span>
-            </div>
-
-            <!-- cột bên phải -->
-            <div id="bond" class="col-xs-12 col-sm-8 text-center">
-                <img id="open-card" data-toggle="modal" data-target="#myModal"
-                     class="media-object img-responsive img-thumbnail bg-snow-tranparent-hidden center-block"
-                     src="img/Winter happy birthday.jpg" alt="80x80px"
-                     style="max-width:100%; height:auto;">
-            </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <p class="text-left"></p>
         </div>
+        <div class="col-xs-4"></div>
+      </div>
     </div>
+  </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title text-info" id="myModalLabel">Thiệp sinh nhật</h4>
-                </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/snowstorm-min.js"></script>
+  <script src="js/js01.js"></script>
 
-                <div class="modal-body">
-                    <div class="containeri">
-                        <img class="img img-responsive center-block"
-                             src="img/Winter happy birthday.jpg" alt="80x80px"
-                             style="max-width:100%; height:auto;">
-                        <audio id="bg-music" controls>
-                            <source src="ms/hpbd.MP3" type="audio/ogg" />
-                            <source src="ms/hppd.MP3" type="audio/mpeg" />
-                            <a href="#">horse</a>
-                        </audio>
-                    </div>
+  <script>
+    const openCard = document.getElementById("open-card");
+    const audio = document.getElementById("bg-music");
 
-                    <h1 class="heading text-danger bg-danger">
-                        <div class="containeri">
-                            <img class="img img-responsive center-block"
-                                 src="img/Snowmen-and-Sledding-Thank-You-Note.jpg.png"
-                                 style="max-width:100%; height:auto;">
-                            <p class="top-right">Nguyễn Thu Hồng</p>
-                            <p class="bottom-right">Thank you for coming</p>
-                            <p class="top-left">Thanks for staying</p>
-                            <p class="and">and make me happy.</p>
-                            <p class="center">Happy birthday to you!</p>
-                            <p class="bottom-left">Hoàng Nguyễn</p>
-                        </div>
-                    </h1>
+    function playMusic() {
+      audio.currentTime = 0;
+      audio.muted = false;
+      audio.play().catch(err => {
+        console.log("Không phát được nhạc:", err);
+      });
+    }
 
-                    <div class="containeri">
-                        <img class="img img-responsive center-block"
-                             src="img/Hong.jpg" style="max-width:100%; height:auto;">
-                    </div>
-                </div>
+    // Gắn cả click và touchstart (mobile)
+    openCard.addEventListener("click", playMusic);
+    openCard.addEventListener("touchstart", playMusic);
 
-                <div class="modal-footer">
-                    <button id="btn-ok" type="button" class="btn btn-primary">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    // Dừng nhạc khi đóng modal
+    $('#myModal').on('hide.bs.modal', function () {
+      audio.pause();
+    });
+  </script>
 
-    <footer class="container-fluid footer navbar-fixed-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-8">
-                    <p class="text-left"></p>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-        </div>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script>
+    const okBtn = document.getElementById("btn-ok");
+    okBtn.addEventListener("click", function () {
+      $('#myModal').modal('hide'); // Ẩn modal
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/snowstorm-min.js"></script>
-    <script src="js/js01.js"></script>
+      // Bắn pháo hoa liên tục 15s
+      const duration = 15 * 1000;
+      const end = Date.now() + duration;
 
-    <script>
-      // Phát nhạc ngay khi click ảnh mở thiệp
-      document.getElementById("open-card").addEventListener("click", function () {
-        var audio = document.getElementById("bg-music");
-        audio.currentTime = 0;
-        audio.muted = false;
-        audio.play().catch(function(err){
-          console.log("Autoplay bị chặn:", err);
+      (function frame() {
+        confetti({
+          particleCount: 6,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 }
         });
-      });
+        confetti({
+          particleCount: 6,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 }
+        });
 
-      // Dừng nhạc khi đóng modal
-      $('#myModal').on('hide.bs.modal', function () {
-        var audio = document.getElementById('bg-music');
-        audio.pause();
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <script>
-      const okBtn = document.getElementById("btn-ok");
-      okBtn.addEventListener("click", function () {
-        $('#myModal').modal('hide'); // Ẩn modal
-
-        // Bắn pháo hoa liên tục
-        const duration = 15 * 1000;
-        const end = Date.now() + duration;
-
-        (function frame() {
-          confetti({
-            particleCount: 4,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 }
-          });
-          confetti({
-            particleCount: 4,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 }
-          });
-
-          if (Date.now() < end) {
-            requestAnimationFrame(frame);
-          }
-        })();
-      });
-    </script>
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    });
+  </script>
 </body>
 </html>
